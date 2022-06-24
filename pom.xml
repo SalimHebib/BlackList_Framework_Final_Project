@@ -77,24 +77,20 @@
             <version>2.17.2</version>
         </dependency>
 
-
     </dependencies>
 
     <build>
-       <plugins>
-           <plugin>
-               <artifactId>maven-surefire-plugin</artifactId>
-               <version>2.22.1</version>
-               <configuration>
-                   <suiteXmlFiles>
-                       <suiteXmlFile>\Users\hebib\PNT\Final Bootcamp\BlackList_Framework_Final_Project\src\test\resources\Salim-runner.xml</suiteXmlFile>
-                       <suiteXmlFile>\Users\hebib\PNT\Final Bootcamp\BlackList_Framework_Final_Project\src\test\resources\Jannatel-runner.xml</suiteXmlFile>
-                       <suiteXmlFile>\Users\hebib\PNT\Final Bootcamp\BlackList_Framework_Final_Project\src\test\resources\Brahim-runner.xml</suiteXmlFile>
-                       <suiteXmlFile>\Users\hebib\PNT\Final Bootcamp\BlackList_Framework_Final_Project\src\test\resources\Ahmed-runner.xml</suiteXmlFile>
-                   </suiteXmlFiles>
-               </configuration>
-           </plugin>
-       </plugins>
+        <plugins>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.1</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>\Users\hebib\PNT\Final Bootcamp\BlackList_Framework_Final_Project\src\test\resources\Ebay-runner.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
 </project>
