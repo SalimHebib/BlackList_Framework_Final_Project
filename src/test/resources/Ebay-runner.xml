@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name=" Ebay Smoke Ebay ">
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="envName" value="browserstack"/>
+    <parameter name="os" value="windows"/>
+    <parameter name="osVersion" value="11"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="99"/>
+    <parameter name="url" value="https://ebay.com"/>
+
+         <test name="SearchTest"><classes>
+             <class name="Ebay.SearchTest"/></classes></test>
+
+    <test name="ElectronicsTest">
+        <classes><class name="Ebay.ElectronicsTest"/></classes></test>
+
+        <test name="HomeAndGardenTest">
+            <classes><class name="Ebay.HomeAndGardenTest"/></classes></test>
+
+        <test name="DailyDealsTest ">
+            <classes><class name="Ebay.DailyDealsTest"/></classes></test>
+
+        <test name="ToysTest ">
+            <classes><class name="Ebay.ToysTest"/> </classes></test>
+
+        <test name="SearchByCategoryTest ">
+            <classes><class name="Ebay.SearchByCategoryTest"/></classes></test>
+
+        <test name="AdvancedSearchTest ">
+            <classes><class name="Ebay.AdvancedSearchTest"/></classes></test>
+
+        <test name="FilterSearchTest ">
+            <classes><class name="Ebay.FilterSearchTest"/></classes></test>
+
+        <test name="MotorsTest ">
+            <classes><class name="Ebay.MotorsTest"/></classes></test>
+
+        <test name="CollectiblesArtTest ">
+            <classes><class name="Ebay.CollectiblesArtTest"/> </classes></test>
+
+        <test name="ClothingAndAccessoriesTest ">
+            <classes><class name="Ebay.ClothingAndAccessoriesTest"/> </classes></test>
+
+        <test name="BusinessAndIndustrialTest ">
+            <classes><class name="Ebay.BusinessAndIndustrialTest"/> </classes></test>
+
+        <test name="JewelryAndWatchesTest ">
+            <classes><class name="Ebay.JewelryAndWatchesTest"/> </classes></test>
+
+        <test name="LoginTest ">
+            <classes><class name="Ebay.LoginTest"/></classes></test>
+
+
+</suite>
+
