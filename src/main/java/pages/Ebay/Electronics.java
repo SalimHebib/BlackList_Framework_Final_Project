@@ -1,14 +1,16 @@
-package pages.EbayHomePage;
+package pages.Ebay;
 
 import base.CommonAPI;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Electronics extends CommonAPI {
 
-
+    private final Logger LOG = LoggerFactory.getLogger(CommonAPI.class);
 
     @FindBy(xpath = "//*[@id='mainContent']/div[1]/ul/li[4]/a" )
     private WebElement floatingMenu;
@@ -57,19 +59,45 @@ public class Electronics extends CommonAPI {
     public Electronics(WebDriver driver){PageFactory.initElements(driver, this);}
 
 
-    public void clickCamerasAndPhoto() {click(CamerasAndPhoto);}
-    public void clickCameraDrones() {click(CameraDrones);}
-    public void clickHeadPhones(){click(HeadPhones);}
-    public void clickHeadPhoneParts(){click(HeadphoneParts);}
-    public void clickWhite(){click(White);}
-    public void clickVideoGames(){click(VideoGames);}
-    public void clickPs5(){click(Ps5);}
-    public void clickNintendo(){click(Nintendo);}
-    public void clickBatteries(){click(Batteries);}
-    public void clickVehicleElectronics(){click(VehicleElectronics);}
-    public void clickCarVideo(){click(CarVideo);}
-    public void clickSmartHome(){click(SmartHome);}
-    public void clickSmartPlugs(){click(SmartPlugs);}
+    public void clickCamerasAndPhoto() {click(CamerasAndPhoto);
+        LOG.info("Click Camera And Photo Successfully");}
 
-    public void hoverOverFloatingMenu(WebDriver driver){hoverOver(driver, floatingMenu);}
+    public void clickCameraDrones() {click(CameraDrones);
+        LOG.info("Click Camera Drones Successfully");}
+
+    public void clickHeadPhones(){click(HeadPhones);
+        LOG.info("Click Head Phones Successfully");}
+
+    public void clickHeadPhoneParts(){click(HeadphoneParts);
+        LOG.info("Click Head Phones Parts Successfully");}
+
+    public void clickWhite(){click(White);
+        LOG.info("Click white Successfully");}
+
+    public void clickVideoGames(){click(VideoGames);
+        LOG.info("Click Video Games Successfully");}
+
+    public void clickPs5(){click(Ps5);
+        LOG.info("Click Ps5 Successfully");}
+
+    public void clickNintendo(){click(Nintendo);
+        LOG.info("Click Nintendo Successfully");}
+
+    public void clickBatteries(){click(Batteries);
+        LOG.info("Click Batteries Successfully");}
+
+    public void clickVehicleElectronics(){click(VehicleElectronics);
+        LOG.info("Click Vehicle Electronics Successfully");}
+
+    public void clickCarVideo(){click(CarVideo);
+        LOG.info("Click Car Video Successfully");}
+
+    public void clickSmartHome(){click(SmartHome);
+        LOG.info("Click Smart Home Successfully");}
+
+    public void clickSmartPlugs(){click(SmartPlugs);
+        LOG.info("Click Smart Plugs Successfully");}
+
+    public void hoverOverFloatingMenu(WebDriver driver){hoverOver(driver, floatingMenu);
+        LOG.info("Floating Menu Successfully");}
 }

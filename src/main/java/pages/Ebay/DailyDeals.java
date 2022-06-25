@@ -1,13 +1,16 @@
-package pages.EbayHomePage;
+package pages.Ebay;
 
 import base.CommonAPI;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class DailyDeals extends CommonAPI {
 
+    private final Logger LOG = LoggerFactory.getLogger(CommonAPI.class);
 
     @FindBy(xpath = "//*[@id='gh-p-1']/a")
     private WebElement DailyDeals;
@@ -59,19 +62,51 @@ public class DailyDeals extends CommonAPI {
 
 
     public DailyDeals(WebDriver driver) {PageFactory.initElements(driver, this); }
-    public void clickDailyDeals(){click(DailyDeals);}
-    public void clickGolf() {click(Golf);}
-    public void clickCobraSnake(){click(CobraSnake);}
-    public void clickFineJewelry() {click(FineJewelry);}
-    public void clickIpads(){click(Ipads);}
-    public void clickAppleIPad(){click(AppleIPad); }
-    public void clickCarAccessories(){click(CarAccessories);}
-    public void clickKitchenDiningBar(){click(KitchenDiningBar);}
-    public void hoverOverFloatingMenuFashion(WebDriver driver){hoverOver(driver, FloatingMenuFashion);}
-    public void hoverOverFloatingMenuSportingGoods(WebDriver driver){hoverOver(driver, FloatingMenuSportingGoods);}
-    public void hoverOverFloatingMenuTech(WebDriver driver){hoverOver(driver, FloatingMenuTech);}
-    public void hoverOverFloatingMenuAutomotive(WebDriver driver){hoverOver(driver,FloatingMenuAutomotive);}
-    public void hoverOverFloatingMenuHomeGarden(WebDriver driver){hoverOver(driver,FloatingMenuHomeGarden);}
-    public void hoverOverFloatingMenuOtherDeals(WebDriver driver){hoverOver(driver,FloatingMenuOtherDeals);}
-    public void clickLuggage(){click(Luggage);}
+
+    public void clickDailyDeals(){click(DailyDeals);
+        LOG.info("Click Daily Deals Successfully ");}
+
+    public void clickGolf() {click(Golf);
+        LOG.info("Click Golf Successfully");}
+
+    public void clickCobraSnake(){click(CobraSnake);
+        LOG.info("Click Cobra snake Successfully");}
+
+    public void clickFineJewelry() {click(FineJewelry);
+        LOG.info("Click Fine Jewelry Successfully ");}
+
+    public void clickIpads(){click(Ipads);
+        LOG.info("Click Ipads Successfully ");}
+
+    public void clickAppleIPad(){click(AppleIPad);
+        LOG.info("Click Apple Ipad Successfully ");}
+
+    public void clickCarAccessories(){click(CarAccessories);
+        LOG.info("Click Car Accessories Successfully ");}
+
+    public void clickKitchenDiningBar(){click(KitchenDiningBar);
+        LOG.info("Click Kitchen & dining & Bar Successfully ");}
+
+    public void clickLuggage(){click(Luggage);
+        LOG.info("Click Luggage Travel Successfully ");}
+
+    public void hoverOverFloatingMenuFashion(WebDriver driver){hoverOver(driver, FloatingMenuFashion);
+        LOG.info("Click Daily Deals Successfully ");}
+
+    public void hoverOverFloatingMenuSportingGoods(WebDriver driver){hoverOver(driver, FloatingMenuSportingGoods);
+        LOG.info("Floating Menu Successfully");}
+
+    public void hoverOverFloatingMenuTech(WebDriver driver){hoverOver(driver, FloatingMenuTech);
+        LOG.info("Floating Menu Successfully");}
+
+    public void hoverOverFloatingMenuAutomotive(WebDriver driver){hoverOver(driver,FloatingMenuAutomotive);
+        LOG.info("Floating Menu Successfully");}
+
+    public void hoverOverFloatingMenuHomeGarden(WebDriver driver){hoverOver(driver,FloatingMenuHomeGarden);
+        LOG.info("Floating Menu Successfully");}
+
+    public void hoverOverFloatingMenuOtherDeals(WebDriver driver){hoverOver(driver,FloatingMenuOtherDeals);
+        LOG.info("Floating Menu Successfully");}
+
+
 }

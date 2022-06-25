@@ -1,12 +1,16 @@
-package pages.EbayHomePage;
+package pages.Ebay;
 
 import base.CommonAPI;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class JewelryAndWatches extends CommonAPI {
+
+    private final Logger LOG = LoggerFactory.getLogger(CommonAPI.class);
 
     public JewelryAndWatches(WebDriver driver) {
         PageFactory.initElements(driver, this);}
@@ -54,20 +58,47 @@ public class JewelryAndWatches extends CommonAPI {
     private WebElement Santos;
 
 
-    public void hoverOverFloatingMenu(WebDriver driver) {hoverOver(driver, FloatingMenu); }
-    public void clickRolex() {click(Rolex);}
-    public void clickSubmariner() {click(Submariner);}
-    public void clickOmega() {click(Omega); }
-    public void clickSpeedMaster() {click(Speedmaster); }
-    public void clickBreitling() {click(Breitling);}
-    public void clickNavitimer(){click(Navitimer);}
-    public void clickTAGHeuer(){click(TAGHeuer);}
-    public void clickAutavia(){click(Autavia);}
-    public void clickPatekPhilippe(){click(PatekPhilippe);}
-    public void clickCalatrava(){click(Calatrava);}
-    public void clickCartier(){click(Cartier);}
-    public void clickCartierWatches(){click(CartierWatches);}
-    public void clickSantos(){click(Santos);}
+    public void hoverOverFloatingMenu(WebDriver driver) {hoverOver(driver, FloatingMenu);
+        LOG.info("Jewelry & Watches Floating Menu successfully");}
+
+    public void clickRolex() {click(Rolex);
+        LOG.info("Click Rolex Watches successfully");}
+
+    public void clickSubmariner() {click(Submariner);
+        LOG.info("Click Rolex Submariner  successfully");}
+
+    public void clickOmega() {click(Omega);
+        LOG.info("Click OMEGA Watches successfully"); }
+
+    public void clickSpeedMaster() {click(Speedmaster);
+        LOG.info("Click OMEGA Speedmaster Watches successfully");}
+
+    public void clickBreitling() {click(Breitling);
+        LOG.info("Click Breitling Watches successfully");}
+
+    public void clickNavitimer(){click(Navitimer);
+        LOG.info("Click Breitling Navitimer Watches successfully");}
+
+    public void clickTAGHeuer(){click(TAGHeuer);
+        LOG.info("Click TAG Heuer Watches successfully");}
+
+    public void clickAutavia(){click(Autavia);
+        LOG.info("Click TAG Heuer Autavia Watches successfully");}
+
+    public void clickPatekPhilippe(){click(PatekPhilippe);
+        LOG.info("Click Patek Philippe Watches successfully");}
+
+    public void clickCalatrava(){click(Calatrava);
+        LOG.info("Click Patek Philippe Calatrava Watches successfully");}
+
+    public void clickCartier(){click(Cartier);
+        LOG.info("Click Cartier successfully");}
+
+    public void clickCartierWatches(){click(CartierWatches);
+        LOG.info("Click Cartier Watches successfully");}
+
+    public void clickSantos(){click(Santos);
+        LOG.info("Click Cartier Santos Watches successfully");}
 
 
 }

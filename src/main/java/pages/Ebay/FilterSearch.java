@@ -1,4 +1,4 @@
-package pages.EbayHomePage;
+package pages.Ebay;
 
 import base.CommonAPI;
 import org.openqa.selenium.By;
@@ -7,9 +7,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 public class FilterSearch extends CommonAPI {
+
+    private final Logger LOG = LoggerFactory.getLogger(CommonAPI.class);
 
     @FindBy(xpath = "//div[1]/input[1]")
     private WebElement searchField;
@@ -64,22 +68,49 @@ public class FilterSearch extends CommonAPI {
         PageFactory.initElements(driver, this);
     }
 
-    public void searchElementAndEnter(String item) {
-        typeAndEnter(searchField, item);
-    }
-    public void selectSamsung(){click(Samsung);}
-    public void selectBlack(){click(black);}
-    public void selectCondition(){click(Condition);}
-    public void selectNew(){click(New);}
-    public void selectScreenSize(){click(screenSize);}
-    public void selectLg(){click(lg);}
-    public void selectSize(){click(Size);}
-    public void selectSketcher(){click(Sketcher);}
-    public void selectBrand(){click(Brand);}
-    public void clickSlide(){click(slide);}
-    public void selectModel(){click(Model);}
-    public void selectUsed(){click(used);}
-    public void selectBrushDryer(){click(BrushDryer);}
-    public void selectDyson(){click(Dyson);}
+    public void searchElementAndEnter(String item) {typeAndEnter(searchField, item);
+        LOG.info("Type and enter successfully ");}
+
+    public void selectSamsung(){click(Samsung);
+        LOG.info("Select Samsung successfully");}
+
+    public void selectBlack(){click(black);
+        LOG.info("Select Black successfully");}
+
+    public void selectCondition(){click(Condition);
+        LOG.info("Select condition successfully");}
+
+    public void selectNew(){click(New);
+        LOG.info("Select New successfully");}
+
+    public void selectScreenSize(){click(screenSize);
+        LOG.info("Select Screen size successfully") ;}
+
+    public void selectLg(){click(lg);
+        LOG.info("Select Lg successfully"); }
+
+    public void selectSize(){click(Size);
+        LOG.info("Select Size successfully");}
+
+    public void selectSketcher(){click(Sketcher);
+        LOG.info("Select Sketcher successfully");}
+
+    public void selectBrand(){click(Brand);
+        LOG.info("Select Brand successfully");}
+
+    public void clickSlide(){click(slide);
+        LOG.info("Click Slide successfully");}
+
+    public void selectModel(){click(Model);
+        LOG.info("Select Model successfully");}
+
+    public void selectUsed(){click(used);
+        LOG.info("Select Used successfully");}
+
+    public void selectBrushDryer(){click(BrushDryer);
+        LOG.info("Select BrushDryer successfully");}
+
+    public void selectDyson(){click(Dyson);
+        LOG.info("Select Dyson successfully");}
 
 }
