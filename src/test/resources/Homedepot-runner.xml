@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name=" Homedepot smoke test">
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="envName" value="browserstack"/>
+    <parameter name="os" value="windows"/>
+    <parameter name="osVersion" value="11"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="99"/>
+    <parameter name="url" value="https://homedepot.com"/>
+
+        <test name="searchFieldTest">
+                <classes>
+                    <class name="Homedepot.SearchFieldTest"></class>
+                </classes>
+            </test>
+
+        <test name="AllDepartmentsTest ">
+            <classes>
+                <class name="Homedepot.AllDepartmentsTest"></class>
+            </classes>
+        </test>
+
+            <test name="HomeDecor">
+                <classes>
+                    <class name="Homedepot.HomeDecorTest"></class>
+                </classes>
+            </test>
+
+    <test name="ProjectsAndIdeas">
+        <classes>
+            <class name="Homedepot.ProjectsAndIdeasTest"></class>
+        </classes>
+    </test>
+
+    <test name="beddingAndBath">
+        <classes>
+            <class name="Homedepot.BeddingAndBathTest"></class>
+        </classes>
+    </test>
+
+    <test name="WallDecor">
+        <classes>
+            <class name="Homedepot.WallDecorTest"></class>
+        </classes>
+    </test>
+
+</suite>
+
