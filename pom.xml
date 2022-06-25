@@ -76,42 +76,21 @@
             <artifactId>log4j-core</artifactId>
             <version>2.17.2</version>
         </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.25</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-core -->
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-core</artifactId>
-            <version>1.2.11</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.2.11</version>
-        </dependency>
 
     </dependencies>
 
     <build>
-       <plugins>
-           <plugin>
-               <artifactId>maven-surefire-plugin</artifactId>
-               <version>2.22.1</version>
-               <configuration>
-                   <suiteXmlFiles>
-
-                       <suiteXmlFile>\Users\rakib\PNT\BlackList_Framework_Final_Project\src\test\resources\Homedepot-runner.xml</suiteXmlFile>
-
-                   </suiteXmlFiles>
-               </configuration>
-           </plugin>
-       </plugins>
+        <plugins>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.1</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>\Users\hebib\PNT\Final Bootcamp\BlackList_Framework_Final_Project\src\test\resources\Ebay-runner.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
 </project>
