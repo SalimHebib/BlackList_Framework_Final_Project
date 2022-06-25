@@ -73,7 +73,7 @@ public class Toys extends CommonAPI {
         LOG.info("Click Toys Successfully");}
 
     public void clickHighestFirst(){click(HighestFirst);
-            LOG.info("Select Highest First  Successfully");
+            LOG.info(" Select Highest First  Successfully");
     }
     public void clickShowFeaturedItems(){click(ShowFeaturedItems);
         LOG.info("Click Show Featured Item Successfully");}

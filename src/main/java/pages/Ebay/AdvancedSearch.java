@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 
 public class AdvancedSearch extends CommonAPI {
 
-    private final Logger LOG = LoggerFactory.getLogger(AdvancedSearch.class);
+
 
     @FindBy(xpath = "//*[@id='gh-as-a']")
     private WebElement AdvancedBtn;
@@ -77,6 +77,7 @@ public class AdvancedSearch extends CommonAPI {
     public AdvancedSearch(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
+    private final Logger LOG = LoggerFactory.getLogger(AdvancedSearch.class);
 
     public void clickAdvancedBtn() {
         click(AdvancedBtn);

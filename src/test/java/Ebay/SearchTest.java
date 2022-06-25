@@ -5,7 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.EbayHomePage.SearchHomePage;
+import pages.Ebay.SearchHomePage;
 import utility.ExcelReader;
 import utility.Utility;
 
@@ -13,15 +13,13 @@ import java.util.List;
 
 public class SearchTest extends CommonAPI {
 
-    private final Logger LOG = LoggerFactory.getLogger(CommonAPI.class);
+
 
     @Test(enabled = true)
     public void SearchIPhoneTest() {
         SearchHomePage homePage = new SearchHomePage(getDriver());
-        LOG.info("Home Page Login successfully ");
         waitFor(3);
         homePage.searchElementAndEnter("iphone 13 pro max");
-        LOG.info("Type And Enter successfully ");
         homePage.selectOptionFromMenuDropdown("Cell Phones & Accessories");
 
     }
@@ -29,10 +27,8 @@ public class SearchTest extends CommonAPI {
     @Test(enabled = true)
     public void SearchSkinCareProductsTest() {
         SearchHomePage homePage = new SearchHomePage(getDriver());
-        LOG.info("Home Page Login successfully ");
         waitFor(3);
         homePage.searchElementAndEnter("Proactive");
-        LOG.info("Type And Enter Successfully");
         homePage.selectOptionFromMenuDropdown("Acne & Blemish Treatments");
 
 
@@ -41,7 +37,6 @@ public class SearchTest extends CommonAPI {
     @Test(enabled = true)
     public void getDropdownList() {
         SearchHomePage homePage = new SearchHomePage(getDriver());
-        LOG.info("Home Page Login successfully ");
         for (String str : homePage.getHomePageDropdownOptions()) {
             System.out.println(str);
         }
@@ -50,7 +45,6 @@ public class SearchTest extends CommonAPI {
     @Test(enabled = true)
     public void selectArtOptionFromDropdown() {
         SearchHomePage homePage = new SearchHomePage(getDriver());
-        LOG.info("Home Page Login successfully ");
         homePage.selectOptionFromMenuDropdownWithSelectOptions("Art");
 
 
@@ -70,7 +64,6 @@ public class SearchTest extends CommonAPI {
     @Test
     public void SearchWireLessProductsTest() {
         SearchHomePage homePage = new SearchHomePage(getDriver());
-        LOG.info("Home Page Login successfully ");
         waitFor(3);
         homePage.searchElementAndEnter("wireless keyboard and mouse");
         waitFor(3);

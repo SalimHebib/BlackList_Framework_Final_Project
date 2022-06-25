@@ -76,7 +76,7 @@ public class HomeAndGarden extends CommonAPI {
         LOG.info("Click Cobra Candle Holder Successfully");}
 
     public void clickElectricalSupplies(){click(ElectricalSupplies);
-        LOG.info("Click SElectrical supplies Successfully");}
+        LOG.info("Click Electrical supplies Successfully");}
 
     public void clickOutletsAndSwitches(){click(OutletsAndSwitches);
         LOG.info("Click outlets And Switches Successfully");}
