@@ -1,16 +1,19 @@
-package pages.EbayHomePage;
+package pages.Ebay;
 
 import base.CommonAPI;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Toys extends CommonAPI {
 
     public Toys(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
+    private final Logger LOG = LoggerFactory.getLogger(CommonAPI.class);
 
     @FindBy(xpath = "//div[6]/div[1]/ul[1]/li[8]/a[1]")
     private WebElement FloatingMenu;
@@ -54,20 +57,41 @@ public class Toys extends CommonAPI {
 
 
 
-    public void hoverOverFloatingMenu(WebDriver driver) {hoverOver(driver, FloatingMenu); }
-    public void clickLegoSets() {click(LegoSets);}
-    public void clickTajMahal() {click(TajMahal);}
-    public void clickDollsTeddyBear() {click(DollsTeddyBear); }
-    public void clickDollHouses() {click(DollHouses); }
-    public void clickToysDeals() {click(ToysDeals);}
-    public void clickHighestFirst(){click(HighestFirst);}
-    public void clickShowFeaturedItems(){click(ShowFeaturedItems);}
-    public void clickActionsFigure(){click(ActionsFigure);}
-    public void clickBuildingToys(){click(BuildingToys);}
-    public void clickMixedLots(){click(MixedLots);}
-    public void clickTrains(){click(trains);}
-    public void clickRailRoads(){click(RailRoads);
+    public void hoverOverFloatingMenu(WebDriver driver) {hoverOver(driver, FloatingMenu);
+        LOG.info("Floating Menu Successfully");}
+
+    public void clickLegoSets() {click(LegoSets);
+        LOG.info("Click legoSet successfully");}
+
+    public void clickTajMahal() {click(TajMahal);
+        LOG.info("Taj Mahal Shown");}
+
+    public void clickDollsTeddyBear() {click(DollsTeddyBear);
+        LOG.info("click Dolls Teddy Bear");}
+
+    public void clickToysDeals() {click(ToysDeals);
+        LOG.info("Click Toys Successfully");}
+
+    public void clickHighestFirst(){click(HighestFirst);
+            LOG.info("Select Highest First  Successfully");
     }
+    public void clickShowFeaturedItems(){click(ShowFeaturedItems);
+        LOG.info("Click Show Featured Item Successfully");}
+
+    public void clickActionsFigure(){click(ActionsFigure);
+        LOG.info("Click Actions Figure Successfully");}
+
+    public void clickBuildingToys(){click(BuildingToys);
+        LOG.info("Click building toys Successfully ");}
+
+    public void clickMixedLots(){click(MixedLots);
+        LOG.info("Click Mixed Lots Successfully");}
+
+    public void clickTrains(){click(trains);
+        LOG.info("Click Trains Successfully");}
+
+    public void clickRailRoads(){click(RailRoads);
+        LOG.info("Click RailsRoad & Trains Successfully ");}
 
 
 

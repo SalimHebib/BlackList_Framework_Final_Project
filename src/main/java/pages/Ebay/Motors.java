@@ -1,12 +1,16 @@
-package pages.EbayHomePage;
+package pages.Ebay;
 
 import base.CommonAPI;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Motors extends CommonAPI {
+
+    private final Logger LOG = LoggerFactory.getLogger(CommonAPI.class);
 
     @FindBy(xpath = "//*[@id='mainContent']/div[1]/ul/li[3]/a")
     private WebElement motors;
@@ -59,20 +63,44 @@ public class Motors extends CommonAPI {
     public Motors(WebDriver driver){PageFactory.initElements(driver, this);}
 
 
-    public void clickCarsAndTrucks() {click(CarsAndTrucks);}
-    public void clickConvertible() {click(Convertible);}
-    public void clickAcura(){click(acura);}
-    public void clickBoats(){click(Boats);}
-    public void clickSailBoats(){click(Sailboats);}
-    public void clickMotorcycles(){click(MotorsCycle);}
-    public void clickCruiser(){click(cruiser);}
-    public void clickPowerSports(){click(PowerSports);}
-    public void clickAtvS(){click(AtvS);}
-    public void clickClassics(){click(Classics);}
-    public void clickCampers(){click(Campers);}
-    public void clickAirstream(){click(AirStream);}
+    public void clickCarsAndTrucks() {click(CarsAndTrucks);
+        LOG.info("Click Cars & Trucks successfully");}
 
-    public void hoverOverFloatingMenu(WebDriver driver){hoverOver(driver, floatingMenu);}
+    public void clickAcura(){click(acura);
+        LOG.info("Click Acura successfully ");}
+
+    public void clickBoats(){click(Boats);
+        LOG.info("Click Boats successfully ");}
+
+    public void clickSailBoats(){click(Sailboats);
+        LOG.info("Click SailBoats successfully ");}
+
+    public void clickMotorcycles(){click(MotorsCycle);
+        LOG.info("Click Motorcycles successfully ");}
+
+    public void clickCruiser(){click(cruiser);
+        LOG.info("Click Cruiser successfully ");}
+
+    public void clickPowerSports(){click(PowerSports);
+        LOG.info("Click PowerSports successfully ");}
+
+    public void clickAtvS(){click(AtvS);
+        LOG.info("Click AtvS successfully ");}
+
+    public void clickClassics(){click(Classics);
+        LOG.info("Click Classics successfully ");}
+
+    public void clickConvertible() {click(Convertible);
+        LOG.info("Click Convertible successfully ");}
+
+    public void clickCampers(){click(Campers);
+        LOG.info("Click Campers successfully ");}
+
+    public void clickAirstream(){click(AirStream);
+        LOG.info("Click AirStream successfully ");}
+
+    public void hoverOverFloatingMenu(WebDriver driver){hoverOver(driver, floatingMenu);
+        LOG.info("Motors Floating Menu successfully");}
 }
 
 

@@ -1,4 +1,4 @@
-package pages.EbayHomePage;
+package pages.Ebay;
 
 import base.CommonAPI;
 import org.openqa.selenium.WebDriver;
@@ -13,8 +13,8 @@ import java.util.List;
 
 public class SearchHomePage extends CommonAPI {
 
+    private final Logger LOG = LoggerFactory.getLogger(CommonAPI.class);
 
-    private final Logger LOG = LoggerFactory.getLogger(SearchHomePage.class);
 
     @FindBy(xpath = "//*[@id='gh-ac']")
     private WebElement searchField;
